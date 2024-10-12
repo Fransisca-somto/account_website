@@ -1,0 +1,145 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: rgb(249, 249, 249);
+  --color-bg: rgba(255, 116, 116, 0.411);
+  --color-black: black;
+  --color-border: rgba(83, 71, 71, 0.267);
+  --color-orange-variant: rgba(250, 57, 8, 0.664);
+  --color-orange: rgba(230, 7, 7, 0.938);
+  --color-blue: rgba(22, 22, 218, 0.548);
+  --transition: all 0.5s ease;
+}
+
+body {
+  font-family: "ubuntu";
+  font-size: 16px;
+}
+
+.index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+  padding: 8em 10em;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.index__list {
+  font-size: 1.5em;
+  color: var(--color-primary);
+  text-shadow: 2px 2px var(--color-black);
+  margin: auto;
+}
+
+.index__form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  margin: auto;
+  box-shadow: 2px 2px 5px var(--color-black);
+  border-radius: 0.2em;
+}
+
+.index__form div {
+  padding: 1.5em;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.index__logo {
+  width: 40px;
+  margin: auto;
+}
+
+.index__form input {
+  height: 3em;
+  width: 100%;
+  margin: auto;
+  border: 1px solid var(--color-border);
+  padding: 1em;
+  transition: var(--transition);
+  outline: none;
+}
+
+.index__form input:focus {
+  border: 1px solid var(--color-orange);
+  border-left: 25px solid var(--color-orange);
+}
+
+.index__form p {
+  margin: auto;
+}
+
+.index__form button, .input__button {
+  height: 3em;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 2em;
+  background: var(--color-orange);
+  border: 0;
+  border-radius: 0;
+  color: var(--color-primary);
+  box-shadow: 0px 15px var(--color-orange-variant);
+  transition: var(--transition);
+  opacity: 0.7;
+}
+
+.input__button:hover {
+  opacity: 1;
+  color: var(--color-primary);
+}
+
+.index__form hr {
+  width: 80%;
+  margin: auto;
+  background-color: var(--color-border);
+  color: var(--color-border);
+}
+
+a:hover{
+  color: red;
+}
+
+button {
+  color: var(--color-primary);
+  background-color: var(--color-orange);
+  padding: 8px 18px;
+  border: none;
+  border-radius: 0.3em;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* ============== SMALLER DEVICES ================ */
+@media screen and (max-width: 1200px) {
+  .index {
+    padding: 2em;
+    gap: 0;
+    grid-template-columns: 2fr 3.5fr;
+    font-size: 0.9em;
+  }
+}

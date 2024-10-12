@@ -1,0 +1,46 @@
+.transferlist {
+    width: 95vw;
+    margin: auto;
+}
+
+.transferlist > p {
+    width: 100%;
+    background-color: var(--color-orange);
+    padding: 5px 15px;
+    border-radius: 5px 5px 5px 25px;
+    color: var(--color-primary);
+}
+
+.transferlist > div {
+    width: 100%;
+    margin-top: 0.5em;
+    border-radius: 0.5em;
+    border: 3px solid black;
+    padding: 2em 3em;
+    
+}
+
+.transferlist > div > form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.1fr;
+    gap: 0.5em;
+    
+}
+
+.transferlist label{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.transferlist label input {
+    height: 2.5em;
+    padding: 0.5em;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.212); 
+}
+
+.transferlist button {
+    padding: 0.7em 0.5em;
+}

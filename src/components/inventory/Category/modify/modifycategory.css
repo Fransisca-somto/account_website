@@ -1,0 +1,45 @@
+.modifycategory {
+    width: 95vw;
+}
+
+.modifycategory > p {
+    width: 100%;
+    background-color: var(--color-orange);
+    color: var(--color-primary);
+    padding: 5px 15px;
+    border-radius: 5px 5px 5px 25px;
+    margin-bottom: 10px;
+}
+
+.modifycategory > div {
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.modifycategory form {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.modifycategory label {
+    margin-bottom: 1em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.modifycategory button {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.modifycategory select {
+    width: 20em;
+    height: 3em;
+    outline: none;
+    border-radius: 6px;
+}

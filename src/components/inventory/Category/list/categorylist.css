@@ -1,0 +1,36 @@
+.categorylist {
+    width: 95vw;    
+}
+
+.categorylist > p {
+    background-color: var(--color-orange);
+    color: var(--color-primary);
+    padding: 5px 15px;
+    border-radius: 5px 5px 5px 25px;
+}
+
+.categorylist > div {
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    padding: 1em 4em;
+}
+
+.categorylist > div > div {
+    width: fit-content;
+    margin: auto;
+}
+
+.categorylist > div > div > p {
+    text-align: right;
+}
+
+.categorylist tr:first-of-type {
+    font-weight: 800;
+}
+
+.categorylist td:nth-child(2) {
+    width: 20em;
+}

@@ -1,0 +1,58 @@
+/** @format */
+
+.productcosting {
+    margin: auto;
+  width: 95vw;
+}
+
+.productcosting > p {
+  width: 100%;
+  background-color: var(--color-orange);
+  padding: 0.4em 1.2em;
+  color: var(--color-primary);
+  border-radius: 5px 5px 5px 28px;
+  font-weight: 500;
+}
+
+.productcosting > div {
+    margin: 1em auto;
+    width: 100%;
+    display: grid;
+    border: 3px solid black;
+    border-radius: 0.5em;
+    padding: 1em 0.5em;
+    background-color: var(--color-primary);
+}
+
+.productcosting div p {
+    text-align: right;
+}
+
+.productcosting .product__heading {
+    font-weight: 800;
+}
+
+td{
+    padding: 0.2em;
+    
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-orange-variant);
+  color: var(--color-primary);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+
+tr:hover {
+    background-color: var(--color-blue);
+    color: var(--color-primary);
+}
+
+tr:first-of-type:hover {
+    background-color: var(--color-primary);
+    color: var(--color-black);
+}

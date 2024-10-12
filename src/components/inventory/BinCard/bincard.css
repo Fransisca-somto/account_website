@@ -1,0 +1,46 @@
+.bincard {
+    width: 95vw;
+    margin: auto;
+}
+
+.bincard > p {
+    width: 100%;
+    background-color: var(--color-orange);
+    color: var(--color-primary);
+    padding: 5px 15px;
+    border-radius: 5px 5px 5px 25px;
+}
+
+.bincard > div {
+    width: 100%;
+    margin: 0.5em auto;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    padding: 1em;
+}
+
+.bincard form{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 0.5fr;
+    justify-content: stretch;
+    gap: 1em;
+    align-items: end;
+} 
+
+.bincard div p {
+    text-align: right;
+}
+
+.bincard form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.bincard form label input{
+    height: 2.5em;
+    padding: 0.2em;
+
+}

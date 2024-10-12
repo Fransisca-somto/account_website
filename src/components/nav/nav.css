@@ -1,0 +1,149 @@
+/* =========== FOR THE NAVIGATION SECTION ============= */
+.nav {
+    display: block;
+}
+
+/* ============ FOR THE UPPER NAVIGATION INFO ============== */
+.nav__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7em;
+    width: 100%;
+}
+
+/* ============ FOR THE NAVIGATION IMAGE ================ */
+.nav__img {
+    width: 40%;
+    margin: auto;
+    font-size: 0.9em;
+}
+
+.honesty {
+    width: 25em;
+}
+
+.logo{
+    width: 3em;
+}
+
+hr {
+    margin: 0 auto 14px auto;
+    background-color: rgba(53, 30, 30, 0.507);
+    color: rgba(31, 29, 29, 0.5);
+    height: 3px;
+}
+
+/* ============= FOR THE NAVIGATION SIDE ================= */
+nav {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1em;
+    text-wrap: wrap;
+}
+
+.nav__navigate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav__navigate > span {
+    font-size: larger;
+    font-weight: 800;
+}
+
+nav li {
+    list-style-type: none;
+    border-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    background-color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.lvl span {
+    font-weight: 100;
+    font-size: 0.8em;
+}
+
+nav li a:hover {
+    background-color: var(--color-orange);
+    color: var(--color-primary);
+}
+
+.nav__navigate a, .firsts a {
+    text-decoration: none;
+    text-wrap: wrap;
+    width: 120px;
+    padding: 3px 0.8em;
+    font-size: 0.9em;
+    color: var(--color-black);
+    transition: var(--transition);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firsts a{
+    padding: 3px 0.5em;
+    /* text-align: center; */
+}
+
+.lvl{
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+}
+
+.lvl:hover .lvls{
+    display: flex;
+    transition: var(--transition);
+}
+
+.lvls{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: -1px;
+    z-index: 1;
+    top: 1.42em;
+    transition: var(--transition);
+}
+
+.first{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.first:hover .firsts {
+    display: flex;
+    transition: var(--transition);
+}
+
+.firsts{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 120px;
+    cursor: pointer;
+    top: 0;
+    transition: var(--transition);
+}
+
+.last {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 120px;
+}
+
+.firsts > li:hover .last {
+    display: flex;
+}
+
+.firsts li {
+    display: flex;
+}

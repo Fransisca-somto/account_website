@@ -1,0 +1,121 @@
+.newopeningbalance {
+    width: 95vw;
+    margin: auto;
+}
+
+.newopeningbalance > p {
+    background-color: var(--color-orange);
+    color: var(--color-primary);
+    padding: 5px 15px;
+    border-radius: 5px 5px 5px 25px;
+}
+
+.newopeningbalance > div {
+    margin-top: 0.5em;
+    border-radius: 0.5em;
+    border: 3px solid black;
+    overflow: visible;
+}
+
+.openingbalance__intro form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.openingbalance__intro {
+    margin: 1em auto;
+    margin-bottom: 5em;
+    padding: 0.5em;
+}
+
+.openingbalance__intro form div{
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    gap: 0.5em;
+    /* width: fit-content; */
+}
+
+.openingbalance__intro form div label {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: center;
+    width: 100%;
+}
+
+.openingbalance__intro form div input,.openingbalance__intro form div select, .openingbalance__intro form div textarea {
+    width: 70%;
+    height: 2.5em;
+    border-radius: 0.3em;
+    padding: 0.4em;
+    outline: none;
+    border: 1px solid rgba(7, 7, 7, 0.222);
+}
+
+.openingbalance__intro form div textarea {
+    resize: vertical;
+    height: 6em;
+}
+
+.openingbalance__items {
+    background-color: var(--color-bg);
+    padding: 0.5em;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.openingbalance__items div form {
+    display: grid;
+    grid-template-columns: 5fr 6fr 1fr 1.5fr 2fr 0.7fr;
+    gap: 0.2em;
+    align-items: end;
+}
+
+.openingbalance__items div form label {
+    display: grid;
+    gap: 0.5em;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.openingbalance__items div form label input {
+    height: 2.5em;
+    width: 100%;
+    padding: 0.5em;
+    outline: none;
+    border-radius: 0.3em;
+    border: 0.5px solid rgba(0, 0, 0, 0.322);
+}
+
+.under__items {
+    margin-top: 0.5em;
+    display: flex;
+    align-items: self-end;
+    justify-content: flex-end;
+}
+
+.under__items label{
+    margin-right: 4em;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.under__items label input {
+    width: 11.6em;
+    height: 2.5em;
+    outline: none;
+}
+
+.opening__base {
+    background-color: var(--color-orange);
+    text-align: right;
+    padding: 0.2em;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.opening__base a{
+    margin: 0em 0.2em;
+}

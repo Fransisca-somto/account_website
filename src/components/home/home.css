@@ -1,0 +1,13 @@
+#details {
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+#details img {
+    width: 30%;
+
+}

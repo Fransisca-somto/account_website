@@ -1,0 +1,102 @@
+/** @format */
+
+.newproduct {
+  width: 95%;
+  margin: auto;
+}
+
+.newproduct p {
+  background-color: var(--color-orange);
+  color: var(--color-primary);
+  padding: 5px 25px;
+  border-radius: 5px 5px 5px 20px;
+  text-shadow: 2px 2px var(--color-black);
+  width: 90vw;
+  position: relative;
+  left: -20px;
+}
+
+.newproduct div {
+  width: 90vw;
+  border: 3.5px solid rgba(0, 0, 0, 0.938);
+  border-radius: 7px;
+  margin: 0.5em auto;
+  padding: 1em;
+  position: relative;
+  left: -20px;
+}
+
+.newproduct div form {
+  width: 75%;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.newproduct label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newproduct input,
+.newproduct select,
+.newproduct textarea {
+  height: 2em;
+  width: 15em;
+  border-radius: 0.2em;
+  outline: none;
+  padding: 0.5em;
+  font-size: 1.1em;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 0px 1px var(--color-orange);
+  transition: var(--transition);
+  text-align: right;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0px 0px 4px var(--color-orange);
+}
+
+.newproduct select,
+.newproduct textarea {
+  padding: 0.3em;
+  font-size: 14.3px;
+  width: 18.5em;
+  height: 2.5em;
+  text-align: left;
+}
+
+.newproduct input[type=date] {
+  text-align: left;
+  font-size: 0.9em;
+  width: 18.5em;
+  height: 2.7em;
+}
+
+.newproduct textarea{
+  resize: vertical;
+  height: 5em;
+}
+
+.newproduct button {
+  align-self: flex-end;
+  width: 100px;
+  padding: 4px;
+  font-size: 1em;
+  background-color: var(--color-orange);
+  color: var(--color-primary);
+  border: 0;
+  border-radius: 0.2em;
+}
+
+.newproduct button:hover {
+  opacity: 0.7;
+  transition: var(--transition);
+}
+

@@ -1,0 +1,45 @@
+.activities {
+    width: 95vw;
+    margin: auto;
+}
+
+.activities > p{
+    width: 100%;
+    background-color: var(--color-orange);
+    padding: 5px 15px;
+    color: var(--color-primary);
+    border-radius: 5px 5px 5px 25px;
+}
+
+.activities > div {
+    margin-top: 0.5em;
+    border-radius: 0.4em;
+    width: 100%;
+    border: 3px solid black;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.activities div form {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 3fr 2fr 0.5fr;
+    gap: 1em;
+}
+
+.activities div label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.activities div label input {
+    height: 2.5em;
+    border-radius: 0.3em;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 0.5em;
+}
+
+.activities div p {
+    text-align: right;
+}
